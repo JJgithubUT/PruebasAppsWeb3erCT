@@ -1,0 +1,17 @@
+{% extends './layout.html' %}
+
+{% block title %} Inicio Chido {% endblock %}
+
+{% block body %}
+
+    <h1>Error 404</h1>
+    <p></p>
+    <h2>Página no encontrada</h2>
+    <hr>
+    <p></p>
+    <a href="{{url_for('index')}}">index</a>
+    <a class="btn btn-secundary" href="{{url_for('index')}}"></a>
+    <p></p>
+    <img src="{{ url_for('static', filename= 'img/404_error.jpg') }}" alt="aqui deberia haber una imagen">
+
+{% endblock %}
