@@ -21,7 +21,11 @@ def layout():
 
 @app.route('/dashboard')
 def dashboard():
-    return render_template('/dashboard.html')
+    return render_template('dashboard.html')
+
+@app.route('/dashboard/users')
+def users():
+    return render_template('users.html')
 
 def pagina_no_encontrada(error):
     #return redirect(url_for('index'))
